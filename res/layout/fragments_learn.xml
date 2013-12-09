@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/theme_gray"
+    tools:context=".WelcomeActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/learn_course"
+            android:layout_width="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="@dimen/selectbar_height"
+            android:background="@drawable/selector_background"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="center_vertical"
+                android:text="课件"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/selectbar_textsize" />
+
+            <ImageView 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/icon_toright"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/learn_discuss"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="@dimen/selectbar_height"
+            android:background="@drawable/selector_background"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="center_vertical"
+                android:text="讨论"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/selectbar_textsize" />
+
+            <ImageView 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/icon_toright"/>
+        </LinearLayout>
+        
+        <LinearLayout
+            android:id="@+id/learn_test"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_height="@dimen/selectbar_height"
+            android:background="@drawable/selector_background"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="8"
+                android:gravity="center_vertical"
+                android:text="测试"
+                android:padding="8dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/selectbar_textsize" />
+
+            <ImageView 
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/icon_toright"/>
+        </LinearLayout>
+
+        
+    </LinearLayout>
+
+</LinearLayout>
