@@ -19,7 +19,7 @@
             android:layout_height="80dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/selector_background" >
 
             <ImageView
@@ -47,7 +47,6 @@
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
                 android:layout_marginRight="5dp"
-                android:layout_marginTop="22dp"
                 android:src="@drawable/icon_toright" />
 
             <TextView
@@ -65,7 +64,6 @@
         </RelativeLayout>
 
         <LinearLayout
-            android:id="@+id/l1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -105,7 +103,6 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="5dp"
-                    android:layout_marginTop="5dp"
                     android:src="@drawable/icon_toright" />
             </RelativeLayout>
 
@@ -142,7 +139,6 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="5dp"
-                    android:layout_marginTop="5dp"
                     android:src="@drawable/icon_toright" />
             </RelativeLayout>
 
@@ -179,7 +175,6 @@
                     android:layout_alignParentRight="true"
                     android:layout_centerVertical="true"
                     android:layout_marginRight="5dp"
-                    android:layout_marginTop="5dp"
                     android:src="@drawable/icon_toright" />
             </RelativeLayout>
         </LinearLayout>

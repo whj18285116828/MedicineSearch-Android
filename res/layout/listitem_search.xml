@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_background"
+    android:padding="5dp" >
+
+    <ImageView
+        android:id="@+id/search_item_picture"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/search_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/search_item_picture"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/search_item_picture"
+        android:text="名称：人参"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/search_item_category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/search_item_name"
+        android:layout_below="@+id/search_item_name"
+        android:layout_centerVertical="true"
+        android:paddingTop="2dp"
+        android:text="类别："
+        android:textColor="#555"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/search_item_taste"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/search_item_picture"
+        android:layout_alignLeft="@+id/search_item_category"
+        android:text="味道："
+        android:textColor="#555"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/icon_toright" />
+
+</RelativeLayout>

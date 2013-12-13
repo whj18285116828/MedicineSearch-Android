@@ -15,8 +15,6 @@ import android.widget.RadioGroup.OnCheckedChangeListener;
 /**
  * 页面底部导航栏
  * 
- * @author ZHF
- * 
  */
 public class BottomFragment extends Fragment {
     //默认回调接口实现类的对象	

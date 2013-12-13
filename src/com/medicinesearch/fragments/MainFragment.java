@@ -7,7 +7,6 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 /**
  *MainView
- * @author ZHF
  *
  */
 public class MainFragment extends FragmentActivity implements BottomFragment.Callbacks {
@@ -18,7 +17,7 @@ public class MainFragment extends FragmentActivity implements BottomFragment.Cal
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+		setContentView(R.layout.fragment_main);
 		//初始化默认调用接口中item选中方法
 		onItemSelected(R.id.fragment_bottom_home);
 	}

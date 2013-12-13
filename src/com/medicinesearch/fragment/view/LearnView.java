@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 import com.medicinesearch.activity.TestActivity;
 import com.medicinesearch.fragments.GeneralFragment;
@@ -19,11 +20,11 @@ import com.medicinesearch_android.R;
 public class LearnView extends GeneralFragment implements OnClickListener
 {
 
-	private LinearLayout course = null;
+	private RelativeLayout course = null;
 
-	private LinearLayout discuss = null;
+	private RelativeLayout discuss = null;
 
-	private LinearLayout test = null;
+	private RelativeLayout test = null;
 
 	Intent intent = new Intent();
 
@@ -43,9 +44,9 @@ public class LearnView extends GeneralFragment implements OnClickListener
 		View view = inflater
 				.inflate(R.layout.fragments_learn, container, false);
 
-		course = (LinearLayout) view.findViewById(R.id.learn_course);
-		discuss = (LinearLayout) view.findViewById(R.id.learn_discuss);
-		test = (LinearLayout) view.findViewById(R.id.learn_test);
+		course = (RelativeLayout) view.findViewById(R.id.learn_course);
+		discuss = (RelativeLayout) view.findViewById(R.id.learn_discuss);
+		test = (RelativeLayout) view.findViewById(R.id.learn_test);
 
 		course.setOnClickListener(this);
 		discuss.setOnClickListener(this);
