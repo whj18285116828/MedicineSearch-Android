@@ -11,5 +11,11 @@
     <string name="sz">设置</string>
     <string name="wdkj">我的课件</string>
     <string name="tx">头像</string>
-
+    <string name="nc">昵称</string>
+    <string name="zh">我的账号</string>
+    <string name="xb">性别</string>
+    <string name="man">男</string>
+    <string name="woman">女</string>
+    <string name="tj">提交</string>
+     <string name="xgmm">修改密码</string>
 </resources>

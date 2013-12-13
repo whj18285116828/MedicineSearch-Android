@@ -27,10 +27,14 @@
             android:name="com.medicinesearch.activity.TestActivity"
             android:label="@string/app_name" >
         </activity>
-        <activity 
+        <activity
             android:name="com.medicinesearch.fragments.MainFragment"
             android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar">
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.medicinesearch.activity.ReviseUersinfo"
+            android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
     </application>
 

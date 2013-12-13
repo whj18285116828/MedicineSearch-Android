@@ -8,6 +8,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
+import com.medicinesearch.activity.ReviseUersinfo;
 import com.medicinesearch.activity.TestActivity;
 import com.medicinesearch.fragments.GeneralFragment;
 import com.medicinesearch_android.R;
@@ -58,7 +59,7 @@ public class UserView extends GeneralFragment implements OnClickListener {
 		// TODO Auto-generated method stub
 		switch (v.getId()) {
 		case R.id.user_info:
-			intent.setClass(this.getActivity(), TestActivity.class);
+			intent.setClass(this.getActivity(), ReviseUersinfo.class);
 			this.startActivity(intent);
 			break;
 
