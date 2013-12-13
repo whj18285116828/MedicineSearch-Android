@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@color/theme_background"
     android:orientation="vertical"
     tools:context=".WelcomeActivity" >
 
@@ -12,18 +13,176 @@
         android:layout_weight="10"
         android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="更多信息1" />
+        <RelativeLayout
+            android:id="@+id/user_info"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_background" >
+
+            <ImageView
+                android:id="@+id/user_head"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_launcher" />
 
             <TextView
-                android:id="@+id/textView2"
+                android:id="@+id/user_nicheng"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="更多信息2" />
+                android:layout_alignTop="@+id/user_head"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/user_head"
+                android:text="@string/nicheng"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="22dp"
+                android:src="@drawable/icon_toright" />
+
+            <TextView
+                android:id="@+id/zhanghao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/user_head"
+                android:layout_alignLeft="@+id/user_nicheng"
+                android:layout_below="@+id/user_nicheng"
+                android:layout_toRightOf="@+id/user_head"
+                android:gravity="center_vertical"
+                android:text="@string/zhanghao"
+                android:textColor="@color/theme_gray_dark"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/user_my_collection"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectbar_height"
+                android:background="@drawable/selector_background" >
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="@dimen/selectbar_imagesize"
+                    android:layout_height="@dimen/selectbar_imagesize"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/img1"
+                    android:gravity="center_vertical"
+                    android:text="@string/wdsc"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/selectbar_textsize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icon_toright" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/user_my_course"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectbar_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_background" >
+
+                <ImageView
+                    android:id="@+id/img2"
+                    android:layout_width="@dimen/selectbar_imagesize"
+                    android:layout_height="@dimen/selectbar_imagesize"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/img2"
+                    android:gravity="center_vertical"
+                    android:text="@string/wdkj"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/selectbar_textsize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icon_toright" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/user_setting"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectbar_height"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_background" >
+
+                <ImageView
+                    android:id="@+id/img3"
+                    android:layout_width="@dimen/selectbar_imagesize"
+                    android:layout_height="@dimen/selectbar_imagesize"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/img3"
+                    android:gravity="center_vertical"
+                    android:text="@string/sz"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/selectbar_textsize" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/icon_toright" />
+            </RelativeLayout>
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>

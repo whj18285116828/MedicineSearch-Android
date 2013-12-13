@@ -4,5 +4,12 @@
     <string name="app_name">MedicineSearch</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_wo">Wo</string>
+    <string name="nicheng">hongw</string>
+    <string name="zhanghao">hhhh</string>
+    <string name="wdsc">我的收藏</string>
+    <string name="sz">设置</string>
+    <string name="wdkj">我的课件</string>
+    <string name="tx">头像</string>
 
 </resources>
