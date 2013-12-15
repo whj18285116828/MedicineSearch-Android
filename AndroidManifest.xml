@@ -33,12 +33,7 @@
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-<<<<<<< HEAD
-            android:name="com.medicinesearch.activity.SearchResultActivity"
-            android:label="@string/app_name"
-=======
             android:name="com.medicinesearch.activity.ReviseUersinfo"
->>>>>>> 00b2d17b25743148a1435c64c9a09e1a6a44bfae
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
     </application>

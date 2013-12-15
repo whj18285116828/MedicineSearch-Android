@@ -12,72 +12,55 @@
         android:layout_weight="10"
         android:orientation="vertical" >
 
-        
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@drawable/welcome_background" >
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical" >
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/frame_little_black"
+                android:orientation="horizontal" >
 
-                <RelativeLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="0dp"
-                    android:layout_weight="2"
-                    android:background="@drawable/welcome_background" >
+                <EditText
+                    android:id="@+id/search_input_edit"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_weight="6"
+                    android:background="@color/white"
+                    android:hint="输入药材名"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="35dp"
-                        android:layout_centerInParent="true"
-                        android:layout_marginLeft="40dp"
-                        android:layout_marginRight="40dp"
-                        android:background="@drawable/frame_little_black"
-                        android:orientation="horizontal" >
-
-                        <EditText
-                            android:id="@+id/search_input_edit"
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_margin="2dp"
-                            android:layout_weight="6"
-                            android:background="@color/white"
-                            android:hint="输入药材名"
-                            android:padding="5dp"
-                            android:singleLine="true"
-                            android:textColor="@color/black"
-                            android:textSize="15sp" />
-
-                        <LinearLayout
-                            android:layout_width="0dp"
-                            android:layout_height="match_parent"
-                            android:layout_weight="1"
-                            android:background="@drawable/frame_little_black" >
-
-                            <Button
-                                android:id="@+id/search_btn_search"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/icon_find" />
-                        </LinearLayout>
-                    </LinearLayout>
-                </RelativeLayout>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:gravity="center"
-                    android:text="预览"
-                    android:textColor="@color/theme_color"
-                    android:textSize="20sp" />
+                    android:background="@drawable/frame_little_black" >
 
-                <ListView
-                    android:id="@+id/seek_search_list"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp"
-                    android:layout_weight="7" >
-                </ListView>
+                    <Button
+                        android:id="@+id/search_btn_search"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/icon_find" />
+                </LinearLayout>
             </LinearLayout>
+        </RelativeLayout>
+
+        <ListView
+            android:id="@+id/search_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7" >
+        </ListView>
     </LinearLayout>
 
 </LinearLayout>
