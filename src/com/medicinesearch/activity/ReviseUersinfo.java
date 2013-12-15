@@ -9,7 +9,6 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
-import com.medicinesearch.fragments.GeneralFragment;
 import com.medicinesearch_android.R;
 
 public class ReviseUersinfo extends Activity implements OnClickListener {

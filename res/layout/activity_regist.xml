@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background" >
+
+    <RelativeLayout
+        android:id="@+id/regist_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/fragment_bottom_normal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="注册"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/regist_goback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_goback" />
+
+        <Button
+            android:id="@+id/regist_add"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/icon_add" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/regist_title" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/regist_txt_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="25dp"
+                android:text="用户名："
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/regist_txt_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/regist_txt_name"
+                android:layout_below="@+id/regist_txt_name"
+                android:layout_marginTop="25dp"
+                android:text="密码："
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/regist_txt_checkpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/regist_txt_password"
+                android:layout_below="@+id/regist_txt_password"
+                android:layout_marginTop="25dp"
+                android:text="确认密码："
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/regist_txt_sex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/regist_txt_password"
+                android:layout_below="@+id/regist_txt_checkpassword"
+                android:layout_marginTop="25dp"
+                android:text="性别："
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/regist_txt_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/regist_txt_password"
+                android:layout_below="@+id/regist_txt_sex"
+                android:layout_marginTop="25dp"
+                android:text="qq："
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/regist_txt_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/regist_txt_password"
+                android:layout_below="@+id/regist_txt_nickname"
+                android:layout_marginTop="25dp"
+                android:text="邮箱："
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/regist_txt_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/regist_txt_password"
+                android:layout_below="@+id/regist_txt_qq"
+                android:layout_marginTop="25dp"
+                android:text="昵称："
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/regist_edit_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/regist_txt_name"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_toRightOf="@+id/regist_txt_checkpassword"
+                android:background="@drawable/frame_little_black"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textSize="18sp" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/regist_edit_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/regist_txt_password"
+                android:layout_alignLeft="@+id/regist_edit_name"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/frame_little_black"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/regist_edit_checkpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/regist_txt_checkpassword"
+                android:layout_alignLeft="@+id/regist_edit_name"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/frame_little_black"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:id="@+id/regist_check_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/regist_txt_sex"
+                android:layout_alignLeft="@+id/regist_edit_checkpassword"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/regist_check_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="男"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+                <RadioButton
+                    android:id="@+id/regist_check_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="女"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/regist_edit_qq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/regist_txt_qq"
+                android:layout_alignLeft="@+id/regist_edit_name"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/frame_little_black"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/regist_edit_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/regist_txt_email"
+                android:layout_alignLeft="@+id/regist_edit_name"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/frame_little_black"
+                android:ems="10"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/regist_edit_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/regist_txt_nickname"
+                android:layout_alignLeft="@+id/regist_edit_name"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/frame_little_black"
+                android:ems="10"
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/regist_btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignLeft="@+id/regist_txt_name"
+                android:layout_alignRight="@+id/regist_edit_email"
+                android:layout_below="@+id/regist_txt_email"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/selector_background"
+                android:text="提交"
+                android:textColor="@color/theme_color"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

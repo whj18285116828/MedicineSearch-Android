@@ -1,5 +1,8 @@
 package com.medicinesearch.activity;
 
+import java.io.IOException;
+
+import com.medicinesearch.database.DatabaseUtil;
 import com.medicinesearch.fragments.MainFragment;
 import com.medicinesearch_android.R;
 
@@ -28,6 +31,8 @@ public class WelcomeActivity extends Activity
 
 	private Intent intent = new Intent();
 
+	private DatabaseUtil util;
+
 	// 创建Handler对象
 	Handler handler = new Handler();
 
@@ -38,6 +43,7 @@ public class WelcomeActivity extends Activity
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_welcome);
 
+		util = new DatabaseUtil(this);
 		mTvAppName = (TextView) findViewById(R.id.welcome_app_name);
 
 		for (int i = 0; i < mImgIds.length; i++)
@@ -62,10 +68,23 @@ public class WelcomeActivity extends Activity
 
 		public void run()
 		{
+			if (util.checkDataBase() == false)
+			{
+				try
+				{
+					util.copyDataBase();
+				}
+				catch (IOException e)
+				{
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+			}
 			mIvColorBlocks[count].setVisibility(View.VISIBLE);
 			count++;
-			if (count == 6)
+			if (count == 6 && util.checkDataBase() == true)
 			{
+
 				intent.setClass(WelcomeActivity.this, MainFragment.class);
 				handler.removeCallbacks(updateThread);
 				finish();

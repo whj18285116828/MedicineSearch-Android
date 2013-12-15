@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@color/theme_background"
     android:orientation="vertical"
     tools:context=".WelcomeActivity" >
 
@@ -12,12 +13,58 @@
         android:layout_weight="10"
         android:orientation="vertical" >
 
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="显示主页信息" />
+        <TextView
+            android:id="@+id/home_app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#FF22AADD"
+            android:textSize="30sp" />
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:gravity="clip_horizontal"
+            android:padding="10dp"
+            android:text="        我们所开发的中医药系统就是为了方便人们对中医药的认识，它可以用于各个领域，例如医院，医学院，家庭等等，人们可以通过它找到自己想要的药，知道它的功能，用途等等。
+　　\n        开发人员：周琼，龚贵伟，杨淑园，洪伟，吴恒金。
+　　\n        开发单位：贵州大学"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/main_btn_login"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_background"
+                android:text="登录"
+                android:textColor="@color/theme_color"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/main_btn_regist"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_background"
+                android:text="注册"
+                android:textColor="@color/red"
+                android:textSize="18sp" />
+        </LinearLayout>
     </LinearLayout>
 
 </LinearLayout>
