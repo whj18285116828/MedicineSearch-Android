@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_background"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/detail_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/fragment_bottom_normal"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="详细信息"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/detail_goback"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/ic_goback" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/detail_title"
+        android:orientation="horizontal"
+        android:padding="3dp" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:padding="3dp"
+                    android:src="@drawable/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/detail_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="3dp"
+                        android:text="名称:"
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/detail_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="3dp"
+                        android:singleLine="true"
+                        android:text="所属类别："
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/detail_taste"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="3dp"
+                        android:text="味道："
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+
+                    <TextView
+                        android:id="@+id/detail_shape"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:padding="3dp"
+                        android:text="外形："
+                        android:textColor="@color/black"
+                        android:textSize="19sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/detail_txt_func"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l1"
+                android:layout_marginTop="10dp"
+                android:text="主要功能:"
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/detail_function"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_txt_func"
+                android:layout_marginTop="5dp"
+                android:gravity="clip_horizontal"
+                android:singleLine="false"
+                android:text="      罗汉果味甘性凉，归肺、大肠经，有润肺止咳，生津止渴的功效，适用于肺热或肺燥咳嗽，百日咳及暑热伤津口渴等，此外还有润肠通便的功效 ."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            
+            <TextView
+                android:id="@+id/detail_txt_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_function"
+                android:layout_marginTop="10dp"
+                android:text="描述："
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/detail_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_txt_describe"
+                android:layout_marginTop="5dp"
+                android:gravity="clip_horizontal"
+                android:singleLine="false"
+                android:text="      罗汉果味甘性凉，归肺、大肠经，有润肺止咳，生津止渴的功效，适用于肺热或肺燥咳嗽，百日咳及暑热伤津口渴等，此外还有润肠通便的功效 ."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+            
+            <TextView
+                android:id="@+id/detail_txt_detailinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_describe"
+                android:layout_marginTop="10dp"
+                android:text="描述："
+                android:textColor="@color/black"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/detail_detailinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detail_txt_detailinfo"
+                android:layout_marginTop="5dp"
+                android:gravity="clip_horizontal"
+                android:singleLine="false"
+                android:text="      罗汉果味甘性凉，归肺、大肠经，有润肺止咳，生津止渴的功效，适用于肺热或肺燥咳嗽，百日咳及暑热伤津口渴等，此外还有润肠通便的功效 ."
+                android:textColor="@color/black"
+                android:textSize="18sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
