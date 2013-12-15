@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="200dp"
+    android:layout_height="200dp"
+    android:background="@drawable/fragment_bottom_normal"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical"
+     >
+
+    <Button
+        android:id="@+id/select_photo"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="@string/xzzp"
+        android:textColor="@color/black"
+       
+        />
+    <Button
+        android:id="@+id/select_photo"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="@string/qx"
+        android:textColor="@color/black"
+        android:textSize="@dimen/selectbar_textsize" 
+        />
+</LinearLayout>

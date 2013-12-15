@@ -20,5 +20,6 @@
     <string name="xgmm">修改密码</string>
     <string name="xzzp">选择照片</string>
     <string name="qx">取消</string>
+    <string name="qr">确认</string>
 
 </resources>

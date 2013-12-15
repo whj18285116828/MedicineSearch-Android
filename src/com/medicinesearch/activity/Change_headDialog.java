@@ -7,7 +7,7 @@ import android.app.Activity;
 import android.app.Dialog;
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.view.View.OnCreateContextMenuListener;
+
 
 public class Change_headDialog extends Dialog{
 	private LayoutInflater factroy;

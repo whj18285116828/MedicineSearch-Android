@@ -42,6 +42,24 @@
         </activity>
         <activity android:name="com.medicinesearch.activity.collect_list" >
         </activity>
+        <activity android:name="com.medicinesearch.activity.PPT_list" >
+        </activity>
+        <activity android:name="com.medicinesearch.activity.DetailInfoActivity" >
+        </activity>
+        <activity
+            android:name="com.medicinesearch.activity.change_nicheng"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.medicinesearch.activity.change_mima"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+         <activity
+            android:name="com.medicinesearch.activity.user_set_up"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.medicinesearch.activity.RegistActivity"></activity>
     </application>
 
 </manifest>

@@ -4,7 +4,7 @@ import com.medicinesearch.adapter.SearchInfoAdapter;
 import com.medicinesearch_android.R;
 
 import android.app.ListActivity;
-import android.database.Cursor;
+
 import android.os.Bundle;
 import android.widget.ListView;
 
@@ -16,7 +16,7 @@ public class collect_list extends ListActivity {
 		super.onCreate(saveInstanceState);
 		setContentView(R.layout.user_collcet);
 		listView=getListView();
-		adapter = new SearchInfoAdapter(this);
+		adapter = new SearchInfoAdapter(this, null);
 		listView.setAdapter(adapter);
 	}
 

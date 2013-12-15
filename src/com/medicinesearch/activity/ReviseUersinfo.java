@@ -17,7 +17,7 @@ public class ReviseUersinfo extends Activity implements OnClickListener {
 	Intent intent = new Intent();
 	RelativeLayout toxiang = null;
 	RelativeLayout nicheng = null;
-	RelativeLayout zhanghao = null;
+
 	RelativeLayout xingbei = null;
 	RelativeLayout mima = null;
 
@@ -25,26 +25,26 @@ public class ReviseUersinfo extends Activity implements OnClickListener {
 
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_reviseuersinfo);
-		toxiang = (RelativeLayout) findViewById(R.id.gerenxixin_toux);
+		toxiang = (RelativeLayout) findViewById(R.id.gerenxinxi_toux);
 		nicheng = (RelativeLayout) findViewById(R.id.gerenxinxi_nic);
 		xingbei = (RelativeLayout) findViewById(R.id.gerenxinxi_xingb);
 		mima = (RelativeLayout) findViewById(R.id.gerenxinxi_mim);
-		zhanghao = (RelativeLayout) findViewById(R.id.gerenxinxi_zhangh);
+		
 		toxiang.setOnClickListener(this);
 		nicheng.setOnClickListener(this);
 		xingbei.setOnClickListener(this);
 		mima.setOnClickListener(this);
-		zhanghao.setOnClickListener(this);
+		
 	}
 
 	@Override
 	public void onClick(View v) {
 		switch (v.getId()) {
-		case R.id.gerenxixin_toux:
+		case R.id.gerenxinxi_toux:
 			new Change_headDialog(this).show();
 			break;
 		case R.id.gerenxinxi_nic:
-			intent.setClass(ReviseUersinfo.this, TestActivity.class);
+			intent.setClass(ReviseUersinfo.this, change_nicheng.class);
 			this.startActivity(intent);
 			break;
 
@@ -53,13 +53,11 @@ public class ReviseUersinfo extends Activity implements OnClickListener {
 			this.startActivity(intent);
 			break;
 		case R.id.gerenxinxi_mim:
-			intent.setClass(ReviseUersinfo.this, TestActivity.class);
+			intent.setClass(ReviseUersinfo.this, change_mima.class);
 			this.startActivity(intent);
 			break;
-		case R.id.gerenxinxi_zhangh:
-			intent.setClass(ReviseUersinfo.this, TestActivity.class);
-			this.startActivity(intent);
-			break;
+		
+			
 		}
 
 	}

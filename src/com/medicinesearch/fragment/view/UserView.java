@@ -8,8 +8,11 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 
+import com.medicinesearch.activity.PPT_list;
 import com.medicinesearch.activity.ReviseUersinfo;
 import com.medicinesearch.activity.TestActivity;
+import com.medicinesearch.activity.collect_list;
+import com.medicinesearch.activity.user_set_up;
 import com.medicinesearch.fragments.GeneralFragment;
 import com.medicinesearch_android.R;
 
@@ -64,17 +67,17 @@ public class UserView extends GeneralFragment implements OnClickListener {
 			break;
 
 		case R.id.user_my_collection:
-			intent.setClass(this.getActivity(), TestActivity.class);
+			intent.setClass(this.getActivity(), collect_list.class);
 			this.startActivity(intent);
 			break;
 
 		case R.id.user_my_course:
-			intent.setClass(this.getActivity(), TestActivity.class);
+			intent.setClass(this.getActivity(), PPT_list.class);
 			this.startActivity(intent);
 			break;
 
 		case R.id.user_setting:
-			intent.setClass(this.getActivity(), TestActivity.class);
+			intent.setClass(this.getActivity(), user_set_up.class);
 			this.startActivity(intent);
 			break;
 		default:

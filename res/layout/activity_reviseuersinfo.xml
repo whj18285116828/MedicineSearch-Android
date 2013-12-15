@@ -33,8 +33,9 @@
         android:orientation="vertical" >
 
         <RelativeLayout
+            android:id="@+id/gerenxinxi_toux"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="80dp"
             android:background="@drawable/selector_background" >
 
             <TextView
@@ -75,9 +76,40 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/gerenxinxi_zhangh"
+            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="30dp"
-            android:layout_marginTop="20dp"
+            android:background="@drawable/selector_background" >
+
+            <TextView
+                android:id="@+id/activity_xiugaiwo_change_zh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="@string/zh"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+           
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:text="@string/zhanghao"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/gerenxinxi_nic"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/selector_background" >
 
             <TextView
@@ -110,42 +142,9 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/gerenxinxi_xingb"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@drawable/selector_background" >
-
-            <TextView
-                android:id="@+id/activity_xiugaiwo_change_zh"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_marginLeft="15dp"
-                android:text="@string/zh"
-                android:textColor="@color/black"
-                android:textSize="20dp" />
-
-            <ImageView
-                android:id="@+id/reviseuers_icon2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/icon_toright" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toLeftOf="@id/reviseuers_icon2"
-                android:text="@string/zhanghao"
-                android:textColor="@color/black"
-                android:textSize="20dp" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:background="@drawable/selector_background" >
 
             <TextView
@@ -178,8 +177,9 @@
         </RelativeLayout>
 
         <RelativeLayout
+            android:id="@+id/gerenxinxi_mim"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="40dp"
             android:background="@drawable/selector_background" >
 
             <TextView
@@ -206,9 +206,9 @@
     <Button
         android:id="@+id/button1"
         android:layout_width="130dp"
-        android:layout_height="30dp"
+        android:layout_height="40dp"
         android:layout_gravity="center"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="60dp"
         android:background="@drawable/selector_background"
         android:gravity="center"
         android:text="@string/tj"
