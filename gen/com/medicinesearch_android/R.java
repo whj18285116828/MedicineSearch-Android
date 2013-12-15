@@ -28,11 +28,11 @@ public final class R {
          screen margins) for sw720dp devices (e.g. 10" tablets) in landscape here.
     
          */
-        public static final int activity_horizontal_margin=0x7f050000;
-        public static final int activity_vertical_margin=0x7f050001;
-        public static final int selectbar_height=0x7f050003;
-        public static final int selectbar_imagesize=0x7f050004;
-        public static final int selectbar_textsize=0x7f050002;
+        public static final int activity_horizontal_margin=0x7f060000;
+        public static final int activity_vertical_margin=0x7f060001;
+        public static final int selectbar_height=0x7f060003;
+        public static final int selectbar_imagesize=0x7f060004;
+        public static final int selectbar_textsize=0x7f060002;
     }
     public static final class drawable {
         public static final int fragment_bottom_normal=0x7f020000;
@@ -40,56 +40,112 @@ public final class R {
         public static final int fragment_bottom_selector=0x7f020002;
         public static final int frame_little_black=0x7f020003;
         public static final int ic_launcher=0x7f020004;
-        public static final int icon_toright=0x7f020005;
-        public static final int main_readiobutton_home=0x7f020006;
-        public static final int main_readiobutton_more=0x7f020007;
-        public static final int main_readiobutton_notice=0x7f020008;
-        public static final int main_readiobutton_order=0x7f020009;
-        public static final int selector_background=0x7f02000a;
-        public static final int welcome_background=0x7f02000b;
+        public static final int icon_find=0x7f020005;
+        public static final int icon_toright=0x7f020006;
+        public static final int main_readiobutton_home=0x7f020007;
+        public static final int main_readiobutton_more=0x7f020008;
+        public static final int main_readiobutton_notice=0x7f020009;
+        public static final int main_readiobutton_order=0x7f02000a;
+        public static final int selector_background=0x7f02000b;
+        public static final int welcome_background=0x7f02000c;
     }
     public static final class id {
-        public static final int action_settings=0x7f090016;
-        public static final int bottom_fragment=0x7f090015;
-        public static final int fragment_bottom_home=0x7f090008;
-        public static final int fragment_bottom_more=0x7f09000b;
-        public static final int fragment_bottom_notice=0x7f09000a;
-        public static final int fragment_bottom_order=0x7f090009;
-        public static final int general_fragment=0x7f09000c;
-        public static final int learn_course=0x7f09000e;
-        public static final int learn_discuss=0x7f09000f;
-        public static final int learn_test=0x7f090010;
-        public static final int main_detail_FrameLayout=0x7f090014;
-        public static final int main_title_RelativeLayout=0x7f090012;
-        public static final int main_title_TextView=0x7f090013;
-        public static final int textView1=0x7f09000d;
-        public static final int textView2=0x7f090011;
-        public static final int welcome_app_name=0x7f090007;
-        public static final int welcome_block_1=0x7f090000;
-        public static final int welcome_block_2=0x7f090001;
-        public static final int welcome_block_3=0x7f090002;
-        public static final int welcome_block_4=0x7f090003;
-        public static final int welcome_block_5=0x7f090004;
-        public static final int welcome_block_6=0x7f090005;
-        public static final int welcome_enjoy=0x7f090006;
+        public static final int action_settings=0x7f090039;
+        public static final int activity_change_uersinfo=0x7f090002;
+        public static final int activity_xiugaiwo_change_head=0x7f090004;
+        public static final int activity_xiugaiwo_change_nc=0x7f090008;
+        public static final int activity_xiugaiwo_change_xb=0x7f09000e;
+        public static final int activity_xiugaiwo_change_zh=0x7f09000b;
+        public static final int bottom_fragment=0x7f090023;
+        public static final int button1=0x7f090012;
+        public static final int fragment_bottom_home=0x7f09001c;
+        public static final int fragment_bottom_more=0x7f09001f;
+        public static final int fragment_bottom_notice=0x7f09001e;
+        public static final int fragment_bottom_order=0x7f09001d;
+        public static final int general_fragment=0x7f090020;
+        public static final int gerenxinxi_mim=0x7f090010;
+        public static final int gerenxinxi_nic=0x7f090007;
+        public static final int gerenxinxi_xingb=0x7f09000d;
+        public static final int gerenxinxi_zhangh=0x7f09000a;
+        public static final int gerenxixin_toux=0x7f090003;
+        public static final int image=0x7f090006;
+        public static final int img1=0x7f090031;
+        public static final int img2=0x7f090033;
+        public static final int img3=0x7f090026;
+        public static final int learn_course=0x7f090025;
+        public static final int learn_discuss=0x7f090027;
+        public static final int learn_test=0x7f090028;
+        public static final int main_detail_FrameLayout=0x7f090022;
+        public static final int main_title_RelativeLayout=0x7f090021;
+        public static final int main_title_TextView=0x7f090001;
+        public static final int reviseuers_icon=0x7f090005;
+        public static final int reviseuers_icon1=0x7f090009;
+        public static final int reviseuers_icon2=0x7f09000c;
+        public static final int reviseuers_icon3=0x7f09000f;
+        public static final int reviseuers_icon4=0x7f090011;
+        public static final int reviseuersinfo_title_RelativeLayout=0x7f090000;
+        public static final int search_btn_search=0x7f09002a;
+        public static final int search_input_edit=0x7f090029;
+        public static final int search_item_category=0x7f090037;
+        public static final int search_item_name=0x7f090036;
+        public static final int search_item_picture=0x7f090035;
+        public static final int search_item_taste=0x7f090038;
+        public static final int search_list=0x7f09002b;
+        public static final int select_photo=0x7f09001b;
+        public static final int textView1=0x7f090024;
+        public static final int user_head=0x7f09002d;
+        public static final int user_info=0x7f09002c;
+        public static final int user_my_collection=0x7f090030;
+        public static final int user_my_course=0x7f090032;
+        public static final int user_nicheng=0x7f09002e;
+        public static final int user_setting=0x7f090034;
+        public static final int welcome_app_name=0x7f09001a;
+        public static final int welcome_block_1=0x7f090013;
+        public static final int welcome_block_2=0x7f090014;
+        public static final int welcome_block_3=0x7f090015;
+        public static final int welcome_block_4=0x7f090016;
+        public static final int welcome_block_5=0x7f090017;
+        public static final int welcome_block_6=0x7f090018;
+        public static final int welcome_enjoy=0x7f090019;
+        public static final int zhanghao=0x7f09002f;
     }
     public static final class layout {
-        public static final int activity_welcome=0x7f030000;
-        public static final int fragment_bottom=0x7f030001;
-        public static final int fragment_general=0x7f030002;
-        public static final int fragments_home=0x7f030003;
-        public static final int fragments_learn=0x7f030004;
-        public static final int fragments_search=0x7f030005;
-        public static final int fragments_user=0x7f030006;
-        public static final int main=0x7f030007;
+        public static final int activity_reviseuersinfo=0x7f030000;
+        public static final int activity_welcome=0x7f030001;
+        public static final int changehead_dialog=0x7f030002;
+        public static final int fragment_bottom=0x7f030003;
+        public static final int fragment_general=0x7f030004;
+        public static final int fragment_main=0x7f030005;
+        public static final int fragments_home=0x7f030006;
+        public static final int fragments_learn=0x7f030007;
+        public static final int fragments_search=0x7f030008;
+        public static final int fragments_user=0x7f030009;
+        public static final int listitem_search=0x7f03000a;
+        public static final int user_collcet=0x7f03000b;
     }
     public static final class menu {
         public static final int main=0x7f080000;
     }
     public static final class string {
-        public static final int action_settings=0x7f060001;
-        public static final int app_name=0x7f060000;
-        public static final int hello_world=0x7f060002;
+        public static final int action_settings=0x7f070001;
+        public static final int app_name=0x7f070000;
+        public static final int hello_world=0x7f070002;
+        public static final int man=0x7f07000d;
+        public static final int nc=0x7f07000a;
+        public static final int nicheng=0x7f070004;
+        public static final int qx=0x7f070012;
+        public static final int sz=0x7f070007;
+        public static final int title_activity_wo=0x7f070003;
+        public static final int tj=0x7f07000f;
+        public static final int tx=0x7f070009;
+        public static final int wdkj=0x7f070008;
+        public static final int wdsc=0x7f070006;
+        public static final int woman=0x7f07000e;
+        public static final int xb=0x7f07000c;
+        public static final int xgmm=0x7f070010;
+        public static final int xzzp=0x7f070011;
+        public static final int zh=0x7f07000b;
+        public static final int zhanghao=0x7f070005;
     }
     public static final class style {
         /** 
@@ -113,10 +169,11 @@ public final class R {
     
  API 14 theme customizations can go here. 
          */
-        public static final int AppBaseTheme=0x7f070000;
+        public static final int AppBaseTheme=0x7f050001;
         /**  Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
-        public static final int AppTheme=0x7f070001;
+        public static final int AppTheme=0x7f050002;
+        public static final int madialog=0x7f050000;
     }
 }

@@ -17,5 +17,8 @@
     <string name="man">男</string>
     <string name="woman">女</string>
     <string name="tj">提交</string>
-     <string name="xgmm">修改密码</string>
+    <string name="xgmm">修改密码</string>
+    <string name="xzzp">选择照片</string>
+    <string name="qx">取消</string>
+
 </resources>

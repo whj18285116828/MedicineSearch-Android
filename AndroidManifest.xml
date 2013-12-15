@@ -33,21 +33,14 @@
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="com.medicinesearch.activity.SearchResultActivity"
-            android:label="@string/app_name"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-        <activity
             android:name="com.medicinesearch.activity.ReviseUersinfo"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="com.medicinesearch.activity.DetailInfoActivity"
-            android:theme="@android:style/Theme.NoTitleBar" >
+            android:name="com.medicinesearch.activity.Change_headDialog"
+            android:theme="@android:style/Theme.Dialog" >
         </activity>
-        <activity
-            android:name="com.medicinesearch.activity.RegistActivity"
-            android:theme="@android:style/Theme.NoTitleBar" >
+        <activity android:name="com.medicinesearch.activity.collect_list" >
         </activity>
     </application>
 
