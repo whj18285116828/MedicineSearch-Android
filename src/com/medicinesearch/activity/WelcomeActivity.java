@@ -82,7 +82,7 @@ public class WelcomeActivity extends Activity
 			}
 			mIvColorBlocks[count].setVisibility(View.VISIBLE);
 			count++;
-			if (count == 6 && util.checkDataBase() == true)
+			if (count == 6 || util.checkDataBase() == true)
 			{
 
 				intent.setClass(WelcomeActivity.this, MainFragment.class);

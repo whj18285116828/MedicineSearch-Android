@@ -3,33 +3,79 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/selector_background"
-    android:orientation="horizontal" >
+    android:orientation="vertical" >
 
-    <TextView
-        android:id="@+id/courselist_course_name"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:layout_margin="10dp"
-        android:layout_weight="5"
-        android:singleLine="true"
-        android:text="软件工程与计算"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:orientation="horizontal" >
 
-    <Button
-        android:id="@+id/courselist_download"
-        android:layout_width="0dp"
+        <TextView
+            android:id="@+id/courselist_course_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="5"
+            android:singleLine="true"
+            android:text="软件工程与计算"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/courselist_download"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:focusable="false"
+            android:layout_weight="1"
+            android:background="@drawable/icon_download" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.5"
+            android:src="@drawable/icon_toright" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/course_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:visibility="gone"
+        android:background="@color/theme_color" />
+
+    <LinearLayout
+        android:id="@+id/course_item_more"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="5dp"
-        android:layout_weight="1"
-        android:background="@drawable/icon_download" />
+        android:visibility="gone"
+        android:orientation="horizontal" >
 
-    <ImageView
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_gravity="center_vertical"
-        android:layout_weight="0.5"
-        android:src="@drawable/icon_toright" />
+        <TextView
+            android:id="@+id/courselist_course_breafinfo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="3"
+            android:singleLine="true"
+            android:text="简要说明"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+        
+        <TextView 
+            android:id="@+id/courselist_course_count"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:singleLine="true"
+            android:text="下载次数：50"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+    </LinearLayout>
 
 </LinearLayout>
