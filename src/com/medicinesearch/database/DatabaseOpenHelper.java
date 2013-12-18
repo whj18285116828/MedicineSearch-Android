@@ -42,6 +42,11 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper
 			createTable(tclass, db);
 		}
 	}
+	public void updata(String tablename, ContentValues values,String selection,String[] whereArgs){
+		SQLiteDatabase db = getWritableDatabase();
+		db.update(tablename, values,selection, whereArgs);
+		db.close();
+	}
 
 	public void insert(String tableName, ContentValues values)
 	{
@@ -60,6 +65,7 @@ public class DatabaseOpenHelper extends SQLiteOpenHelper
 				groupBy, having, orderBy);
 		return c;
 	}
+	
 
 	public void del(String tableName, int id)
 	{

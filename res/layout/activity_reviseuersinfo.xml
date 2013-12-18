@@ -35,8 +35,7 @@
         <RelativeLayout
             android:id="@+id/gerenxinxi_toux"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:background="@drawable/selector_background" >
+            android:layout_height="80dp" >
 
             <TextView
                 android:id="@+id/activity_xiugaiwo_change_head"
@@ -49,38 +48,19 @@
                 android:textSize="20dp" />
 
             <ImageView
-                android:id="@+id/reviseuers_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_centerVertical="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/icon_toright" />
-
-            <ImageView
                 android:id="@+id/image"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_centerVertical="true"
-                android:layout_toLeftOf="@+id/reviseuers_icon"
-                android:src="@drawable/ic_launcher" />
-
-            <ImageView
-                android:id="@+id/reviseuers_icon"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/icon_toright" />
+                android:layout_marginRight="20dp"
+                android:src="@drawable/ic_launcher" />
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/gerenxinxi_zhangh"
-            android:layout_marginTop="30dp"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
-            android:background="@drawable/selector_background" >
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp" >
 
             <TextView
                 android:id="@+id/activity_xiugaiwo_change_zh"
@@ -92,13 +72,12 @@
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
-           
-
             <TextView
+                android:id="@+id/gerenxinxi_zhangh"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
                 android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
                 android:layout_marginRight="20dp"
                 android:text="@string/zhanghao"
                 android:textColor="@color/black"
@@ -106,14 +85,11 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/gerenxinxi_nic"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:layout_marginTop="30dp"
-            android:background="@drawable/selector_background" >
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp" >
 
             <TextView
-                android:id="@+id/activity_xiugaiwo_change_nc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -122,33 +98,24 @@
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
-            <ImageView
-                android:id="@+id/reviseuers_icon1"
+            <TextView
+                android:id="@+id/gerenxinxi_nic"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/icon_toright" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toLeftOf="@id/reviseuers_icon1"
+                android:layout_marginRight="20dp"
                 android:text="@string/nicheng"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/gerenxinxi_xingb"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/selector_background" >
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp" >
 
             <TextView
-                android:id="@+id/activity_xiugaiwo_change_xb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
@@ -157,62 +124,69 @@
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
-            <ImageView
-                android:id="@+id/reviseuers_icon3"
+            <TextView
+                android:id="@+id/gerenxinxi_xingb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/icon_toright" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerVertical="true"
-                android:layout_toLeftOf="@id/reviseuers_icon3"
+                android:layout_marginRight="20dp"
                 android:text="@string/man"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
         </RelativeLayout>
 
         <RelativeLayout
-            android:id="@+id/gerenxinxi_mim"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:background="@drawable/selector_background" >
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp" >
 
             <TextView
-                android:id="@+id/activity_xiugaiwo_change_xb"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="15dp"
-                android:text="@string/xgmm"
+                android:text="qq"
                 android:textColor="@color/black"
                 android:textSize="20dp" />
 
-            <ImageView
-                android:id="@+id/reviseuers_icon4"
+            <TextView
+                android:id="@+id/gerenxinxi_qq"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
                 android:layout_centerVertical="true"
-                android:layout_marginRight="5dp"
-                android:src="@drawable/icon_toright" />
+                android:layout_marginRight="20dp"
+                android:text="11111111"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:text="邮箱"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/gerenxinxi_youxiang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:text="11111111"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
         </RelativeLayout>
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="130dp"
-        android:layout_height="40dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/selector_background"
-        android:gravity="center"
-        android:text="@string/tj"
-        android:textColor="@color/black"
-        android:textSize="20dp" />
 
 </LinearLayout>

@@ -50,8 +50,9 @@
             android:layout_marginTop="30dp"
             android:layout_toRightOf="@id/tishi1"
             android:background="@drawable/frame_little_black"
+            android:password="true"
             android:padding="5dp"
-            android:text="输入新昵称"
+            android:hint="输入新昵称"
             android:textColor="@color/black"
             android:textSize="28dp" />
 
@@ -77,10 +78,11 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="5dp"
             android:layout_marginTop="30dp"
+            android:password="true"
             android:layout_toRightOf="@id/tishi2"
             android:background="@drawable/frame_little_black"
             android:padding="5dp"
-            android:text="输入新昵称"
+            android:hint="输入新昵称"
             android:textColor="@color/black"
             android:textSize="28dp" />
 
@@ -96,7 +98,7 @@
             android:padding="5dp"
             android:text="确认新密码:"
             android:textSize="20dp" />
-"
+
 
         <EditText
             android:id="@+id/zaici"
@@ -105,10 +107,11 @@
             android:layout_alignLeft="@+id/xin"
             android:layout_below="@id/tishi3"
             android:layout_marginRight="5dp"
+            android:password="true"
             android:layout_marginTop="10dp"
             android:background="@drawable/frame_little_black"
             android:padding="5dp"
-            android:text="输入新昵称"
+            android:hint="输入新昵称"
             android:textColor="@color/black"
             android:textSize="28dp" />
         
