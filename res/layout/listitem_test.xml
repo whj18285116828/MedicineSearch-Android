@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+        android:id="@+id/test_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="clip_horizontal"
+        android:singleLine="false"
+        android:text="1.能大补元气，复脉固脱，为拯危救脱要药的是:"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:id="@+id/test_answer_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <RadioButton
+            android:id="@+id/test_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="党参"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/test_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="西洋参"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/test_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="太子参"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/test_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="人参"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RadioButton
+            android:id="@+id/test_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="缓冲"
+            android:visibility="gone"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/test_rightanswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="正确答案：人参"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/test_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="解释："
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:visibility="gone" />
+
+</LinearLayout>

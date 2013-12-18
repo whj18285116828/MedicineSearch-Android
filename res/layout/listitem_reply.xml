@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/selector_background"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/theme_gray"
+        android:layout_marginTop="0.5dp"
+        android:layout_marginLeft="0.5dp"
+        android:layout_marginRight="0.5dp" >
+
+        <TextView
+            android:id="@+id/replyitem_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="left"
+            android:padding="5dp"
+            android:text="A回复B"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/replyitem_time"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:padding="5dp"
+            android:text="2013-12-13 15:12"
+            android:textColor="@color/black"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/theme_gray_dark" />
+
+    <TextView
+        android:id="@+id/replyitem_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="这个人参不错"
+        android:gravity="clip_horizontal"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
+
+</LinearLayout>

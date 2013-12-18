@@ -7,6 +7,8 @@
     <uses-sdk
         android:minSdkVersion="8"
         android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
 
     <application
         android:allowBackup="true"
@@ -33,33 +35,46 @@
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
+            android:name="com.medicinesearch.activity.SearchResultActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
             android:name="com.medicinesearch.activity.ReviseUersinfo"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="com.medicinesearch.activity.Change_headDialog"
-            android:theme="@android:style/Theme.Dialog" >
-        </activity>
-        <activity android:name="com.medicinesearch.activity.collect_list" >
-        </activity>
-        <activity android:name="com.medicinesearch.activity.PPT_list" >
-        </activity>
-        <activity android:name="com.medicinesearch.activity.DetailInfoActivity" >
-        </activity>
-        <activity
-            android:name="com.medicinesearch.activity.change_nicheng"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-         <activity
-            android:name="com.medicinesearch.activity.change_mima"
-            android:theme="@android:style/Theme.NoTitleBar" >
-        </activity>
-         <activity
-            android:name="com.medicinesearch.activity.user_set_up"
+            android:name="com.medicinesearch.activity.DetailInfoActivity"
             android:theme="@android:style/Theme.NoTitleBar" >
         </activity>
         <activity
-            android:name="com.medicinesearch.activity.RegistActivity"></activity>
+            android:name="com.medicinesearch.activity.RegistActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.medicinesearch.activity.LoginActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.medicinesearch.activity.CoursewareActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.medicinesearch.activity.OnlineTestActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.medicinesearch.activity.DiscussActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.medicinesearch.activity.PublishInfoActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
+        <activity
+            android:name="com.medicinesearch.activity.ReplyActivity"
+            android:theme="@android:style/Theme.NoTitleBar" >
+        </activity>
     </application>
 
 </manifest>
